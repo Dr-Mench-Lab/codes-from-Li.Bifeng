@@ -75,7 +75,7 @@ points(x,dt(x,12),type="l")
 points(x,dt(x,30),type="l")
 points(x,dt(x,100),type="l")
 
-######## 2.2 CI for ¦Ì
+######## 2.2 CI for Â¦ÃŒ
 
 #### page 69
 
@@ -159,7 +159,7 @@ t.dist.pval<-function(t.summary){
   plot(x.curve,y.curve,type="n"
        ,ylab=paste("t-dist(df=",signif(t.summary$parameter,3),")")
        ,xlab=paste("t-stat=",signif(t.summary$statistic,5)
-                   ,"£¬Shaded area is p-value=",signif(t.summary$p.value,5)))
+                   ,"Â£Â¬Shaded area is p-value=",signif(t.summary$p.value,5)))
   if((t.summary$alternative=="less")|(t.summary$alternative=="two.sided")){
     x.pval.l<-seq(lim.lower,-abs(t.summary$statistic),length=200)
     y.pval.l<-dt(x.pval.l,df=t.summary$parameter)
